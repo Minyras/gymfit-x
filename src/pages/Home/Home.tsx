@@ -6,7 +6,9 @@ import type HomeProps from "../../models/HomeProps";
 import { Clock3, Mail, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import Button from "../../components/Button/Button";
-
+import aboutUs from "../../assets/svg/about us.svg";
+import homeGirl from "../../assets/img/homegirl.jpeg";
+import homeBoy from "../../assets/img/homeboy.jpeg";
 gsap.registerPlugin(ScrollTrigger);
 const Home = ({ isActive }: HomeProps) => {
   const imageRef = useRef(null);
@@ -91,6 +93,25 @@ const Home = ({ isActive }: HomeProps) => {
           </div>
         </div>
       </div>
+      <div className="home-about">
+        <img src={aboutUs} alt="about us" />
+
+        <h1>WE ARE NOT JUST A GYM, WE ARE A WHOLE COMMUNITY</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt
+          sagittis, diam netus vel eget scelerisque nibh justo, vestibulum.
+          Velit senectus.
+        </p>
+        <div className="buttons">
+          <Button name={"SUBSCRIBE NOW"} style={"black-button"} />
+          <Button name={"BROWSE CLASSES"} style={"white-transparent"} />
+        </div>
+      </div>
+      <div className="classes-img">
+        <img src={homeBoy} alt="" />
+        <img className="home-girl" src={homeGirl} alt="" />
+      </div>
+      <div className="home-classes"></div>
     </div>
   );
 };

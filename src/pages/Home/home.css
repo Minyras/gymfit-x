@@ -14,7 +14,7 @@
   position: relative;
   transform-origin: center;
 }
-.black {
+.home .black {
   position: absolute;
   top: 0;
   width: 100%;
@@ -103,4 +103,56 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+/* Home About  */
+
+.home-about {
+  padding-top: 150px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.home-about img {
+  position: relative;
+  bottom: -80px;
+  z-index: -1;
+}
+.home-about h1 {
+  font-size: 60px;
+}
+.home-about p {
+  font-size: 22px;
+  width: 70%;
+  margin: 0 auto;
+  font-weight: lighter;
+}
+.home-about .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.classes-img {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0 100px;
+  top: 150px;
+}
+.home-girl {
+  right: 10%;
+  position: absolute;
+  bottom: -20%;
+}
+.classes-img img {
+  width: 670px;
+}
+.home-classes {
+  background-color: #141414;
+  width: 100%;
+  padding-top: 300px;
 }
