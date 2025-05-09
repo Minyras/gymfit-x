@@ -1,0 +1,50 @@
+.header {
+  background-color: black;
+  width: 80%;
+  position: fixed;
+  top: 0;
+  left: 10%;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 30px;
+}
+
+.header svg {
+  width: 35px;
+  height: 35px;
+}
+.count {
+  background-color: #ff3737;
+  padding: 2px 4px;
+  font-size: 14px;
+  position: absolute;
+  bottom: -5px;
+  left: -5px;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 20px;
+}
+nav ul a,
+.logo img {
+  transition: 0.3s ease-in-out;
+}
+nav ul a:hover {
+  color: #ff3737;
+}
+.shoppingBag {
+  position: relative;
+}
+
+.active {
+  color: #ff3737;
+}
+
+.logo:hover img {
+  transform: scale(1.1);
+}

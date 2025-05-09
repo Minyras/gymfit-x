@@ -1,8 +1,11 @@
 .button {
-  padding: 20px;
+  padding: 25px;
   color: white;
   width: 300px;
   text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
 }
 
 .white {
@@ -15,4 +18,16 @@
   background-color: transparent;
   color: white;
   border: 1px solid white;
+}
+
+.transparent:hover {
+  background-color: white;
+  color: black;
+  transform: translateY(-5px);
+}
+.white:hover {
+  background-color: #ff3737;
+  color: white;
+  border-color: #ff3737;
+  transform: translateY(-5px);
 }
