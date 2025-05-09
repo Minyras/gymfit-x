@@ -1,0 +1,18 @@
+.button {
+  padding: 20px;
+  color: white;
+  width: 300px;
+  text-align: center;
+}
+
+.white {
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+}
+
+.transparent {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
