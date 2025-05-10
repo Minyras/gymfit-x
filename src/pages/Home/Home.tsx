@@ -3,12 +3,13 @@ import "./home.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import type HomeProps from "../../models/HomeProps";
-import { Clock3, Mail, MapPin } from "lucide-react";
+import { ChevronLeft, ChevronRight, Clock3, Mail, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import Button from "../../components/Button/Button";
 import aboutUs from "../../assets/svg/about us.svg";
 import homeGirl from "../../assets/img/homegirl.jpeg";
 import homeBoy from "../../assets/img/homeboy.jpeg";
+import classesSvg from "../../assets/svg/classes.svg";
 gsap.registerPlugin(ScrollTrigger);
 const Home = ({ isActive }: HomeProps) => {
   const imageRef = useRef(null);
@@ -108,10 +109,25 @@ const Home = ({ isActive }: HomeProps) => {
         </div>
       </div>
       <div className="classes-img">
-        <img src={homeBoy} alt="" />
-        <img className="home-girl" src={homeGirl} alt="" />
+        <div className="white-bg"></div>
+        <div className="black-bg"></div>
+        <div className="images">
+          <img src={homeBoy} alt="" />
+          <img className="home-girl" src={homeGirl} alt="" />
+        </div>
       </div>
-      <div className="home-classes"></div>
+      <div className="home-classes">
+        <div className="classes-title">
+          <div>
+            <img className="classes-svg" src={classesSvg} alt="" />
+            <h2>DISCOVER ALL OUR CLASSES</h2>
+          </div>
+          <div className="arrows">
+            <ChevronLeft />
+            <ChevronRight />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

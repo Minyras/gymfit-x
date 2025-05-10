@@ -137,22 +137,52 @@
   gap: 30px;
 }
 .classes-img {
-  display: flex;
-  align-items: center;
   position: relative;
-  padding: 0 100px;
-  top: 150px;
 }
 .home-girl {
-  right: 10%;
   position: absolute;
   bottom: -20%;
+  left: 75%;
 }
 .classes-img img {
   width: 670px;
 }
-.home-classes {
+.images {
+  position: absolute;
+  top: 30px;
+  padding: 0 100px;
+}
+
+.classes-img .white-bg {
+  background-color: white;
+  width: 100%;
+  height: 400px;
+}
+.classes-img .black-bg {
   background-color: #141414;
   width: 100%;
-  padding-top: 300px;
+  height: 400px;
+}
+
+.home-classes {
+  background-color: #141414;
+  color: white;
+  width: 100%;
+  padding: 50px 0;
+}
+
+.home-classes svg {
+  background-color: white;
+  color: black;
+  height: 50px;
+  width: 50px;
+}
+.classes-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+.classes-svg {
+  position: relative;
 }
