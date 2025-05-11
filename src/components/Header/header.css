@@ -24,24 +24,24 @@
   bottom: -5px;
   left: -5px;
 }
-nav ul {
+.header nav ul {
   display: flex;
   align-items: center;
   gap: 30px;
   font-size: 20px;
 }
-nav ul a,
+.header nav ul a,
 .logo img {
   transition: 0.3s ease-in-out;
 }
-nav ul a:hover {
+.header nav ul a:hover {
   color: #ff3737;
 }
 .shoppingBag {
   position: relative;
 }
 
-.active {
+.header .active {
   color: #ff3737;
 }
 
