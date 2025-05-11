@@ -168,7 +168,8 @@
   background-color: #141414;
   color: white;
   width: 100%;
-  padding: 50px 0;
+  padding: 100px 0;
+  position: relative;
 }
 
 .home-classes svg {
@@ -182,7 +183,29 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 100px;
+  margin-bottom: 100px;
+}
+.classes-title h2 {
+  z-index: 99;
+  font-size: 60px;
 }
 .classes-svg {
-  position: relative;
+  position: absolute;
+  left: 0;
+}
+.arrows {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.yt {
+  background-image: url("../../assets/img/yt-bg.jpeg");
 }

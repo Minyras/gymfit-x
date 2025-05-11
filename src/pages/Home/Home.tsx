@@ -10,6 +10,7 @@ import aboutUs from "../../assets/svg/about us.svg";
 import homeGirl from "../../assets/img/homegirl.jpeg";
 import homeBoy from "../../assets/img/homeboy.jpeg";
 import classesSvg from "../../assets/svg/classes.svg";
+
 gsap.registerPlugin(ScrollTrigger);
 const Home = ({ isActive }: HomeProps) => {
   const imageRef = useRef(null);
@@ -36,7 +37,7 @@ const Home = ({ isActive }: HomeProps) => {
   }, [isActive]);
   return (
     <div className="home">
-      <div className="home-hero-container">
+      <section className="home-hero-container">
         <div ref={imageRef} className="background">
           <div className="black"></div>
         </div>
@@ -51,8 +52,8 @@ const Home = ({ isActive }: HomeProps) => {
             <Button name={"BROWSE CLASSES"} style={"transparent"} />
           </div>
         </div>
-      </div>
-      <div className="home-info">
+      </section>
+      <section className="home-info">
         <div className="contact">
           <Mail />
           <div>
@@ -93,8 +94,8 @@ const Home = ({ isActive }: HomeProps) => {
             <p>6736 S SHERBOURNE DR LOS ANGELES, 90056</p>
           </div>
         </div>
-      </div>
-      <div className="home-about">
+      </section>
+      <section className="home-about">
         <img src={aboutUs} alt="about us" />
 
         <h1>WE ARE NOT JUST A GYM, WE ARE A WHOLE COMMUNITY</h1>
@@ -107,27 +108,34 @@ const Home = ({ isActive }: HomeProps) => {
           <Button name={"SUBSCRIBE NOW"} style={"black-button"} />
           <Button name={"BROWSE CLASSES"} style={"white-transparent"} />
         </div>
-      </div>
-      <div className="classes-img">
+      </section>
+      <section className="classes-img">
         <div className="white-bg"></div>
         <div className="black-bg"></div>
         <div className="images">
           <img src={homeBoy} alt="" />
           <img className="home-girl" src={homeGirl} alt="" />
         </div>
-      </div>
-      <div className="home-classes">
+      </section>
+      <section className="home-classes">
         <div className="classes-title">
-          <div>
-            <img className="classes-svg" src={classesSvg} alt="" />
-            <h2>DISCOVER ALL OUR CLASSES</h2>
-          </div>
+          <img className="classes-svg" src={classesSvg} alt="" />
+          <h2>DISCOVER ALL OUR CLASSES</h2>
+
           <div className="arrows">
             <ChevronLeft />
             <ChevronRight />
           </div>
         </div>
-      </div>
+        <div className="carousel-container">
+          <div>Carousel</div>
+          <Button name={"BROWSE ALL CLASSES"} style={"white"} />
+        </div>
+      </section>
+      <section className="yt">
+        <h2>DISCOVER WHAT MAKES OUR GYM DIFFERENT</h2>
+        <Button name="SUBSCRIBE NOW" style="white" />
+      </section>
     </div>
   );
 };
