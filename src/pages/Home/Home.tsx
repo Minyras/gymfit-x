@@ -12,7 +12,8 @@ import homeBoy from "../../assets/img/homeboy.jpeg";
 import classesSvg from "../../assets/svg/classes.svg";
 import ytBg from "../../assets/img/yt-bg.jpeg";
 import { FaCirclePlay } from "react-icons/fa6";
-
+import trainerSVg from "../../assets/svg/trainer svg.svg";
+import TrainerCards from "../../components/TrainerCards/TrainerCards";
 gsap.registerPlugin(ScrollTrigger);
 const Home = ({ isActive }: HomeProps) => {
   const imageRef = useRef(null);
@@ -145,6 +146,15 @@ const Home = ({ isActive }: HomeProps) => {
             <FaCirclePlay />
           </div>
         </div>
+      </section>
+      <section className="home-team">
+        <div className="team-title">
+          <img className="trainer-svg" src={trainerSVg} alt="trainers" />
+          <h2>
+            OUR TEAM OF <br /> PERSONAL TRAINERS
+          </h2>
+        </div>
+        <TrainerCards />
       </section>
     </div>
   );

@@ -205,6 +205,7 @@
   flex-direction: column;
   gap: 30px;
 }
+
 .yt {
   position: relative;
   background-color: rgba(0, 0, 0, 0.618);
@@ -230,4 +231,25 @@
   width: 200px;
   height: 200px;
   fill: white;
+}
+
+.home-team {
+}
+.trainer-svg {
+  position: absolute;
+  left: 0;
+  bottom: -25%;
+}
+.team-title {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 150px;
+  position: relative;
+}
+.team-title h2 {
+  font-size: 60px;
+  width: 70%;
+  z-index: 999;
 }

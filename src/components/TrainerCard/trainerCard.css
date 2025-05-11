@@ -1,0 +1,81 @@
+.trainer-card {
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.trainerImg {
+  position: relative;
+  overflow: hidden;
+  height: 350px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.trainer-img {
+  width: 100%;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  margin-bottom: 20px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.trainerImg button {
+  position: absolute;
+  right: 20px;
+  bottom: 40px;
+  background-color: red;
+  color: white;
+  padding: 15px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+}
+
+/* Hide and show icons */
+.plus-icon {
+  display: block;
+  transition: 0.3s ease-in-out;
+}
+
+.moveright-icon {
+  display: none;
+  transition: 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+.trainer-card:hover .trainer-img {
+  transform: scale(1.1);
+}
+
+.trainer-card:hover .trainerImg button {
+  background-color: black;
+}
+
+.trainer-card:hover .plus-icon {
+  display: none;
+}
+
+.trainer-card:hover .moveright-icon {
+  display: block;
+}
+
+.trainerInfo {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.trainerInfo h3 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.trainerInfo span {
+  font-size: 18px;
+  font-weight: bold;
+  color: gray;
+}
