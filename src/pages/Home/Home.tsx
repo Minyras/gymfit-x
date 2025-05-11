@@ -10,6 +10,8 @@ import aboutUs from "../../assets/svg/about us.svg";
 import homeGirl from "../../assets/img/homegirl.jpeg";
 import homeBoy from "../../assets/img/homeboy.jpeg";
 import classesSvg from "../../assets/svg/classes.svg";
+import ytBg from "../../assets/img/yt-bg.jpeg";
+import { FaCirclePlay } from "react-icons/fa6";
 
 gsap.registerPlugin(ScrollTrigger);
 const Home = ({ isActive }: HomeProps) => {
@@ -133,8 +135,16 @@ const Home = ({ isActive }: HomeProps) => {
         </div>
       </section>
       <section className="yt">
-        <h2>DISCOVER WHAT MAKES OUR GYM DIFFERENT</h2>
-        <Button name="SUBSCRIBE NOW" style="white" />
+        <img src={ytBg} alt="" />
+        <div className="yt-info black">
+          <div className="yt-title">
+            <h2>DISCOVER WHAT MAKES OUR GYM DIFFERENT</h2>
+            <Button name="SUBSCRIBE NOW" style="white" />
+          </div>
+          <div>
+            <FaCirclePlay />
+          </div>
+        </div>
       </section>
     </div>
   );

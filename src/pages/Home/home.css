@@ -22,7 +22,7 @@
   background-color: rgba(0, 0, 0, 0.451);
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
 }
 .home-hero > .buttons {
   display: flex;
@@ -205,7 +205,29 @@
   flex-direction: column;
   gap: 30px;
 }
-
 .yt {
-  background-image: url("../../assets/img/yt-bg.jpeg");
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.618);
+}
+.yt-info {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+.yt img {
+  width: 100%;
+}
+.yt-title h2 {
+  color: white;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+.yt-title {
+  width: 60%;
+}
+.yt-info svg {
+  width: 200px;
+  height: 200px;
+  fill: white;
 }
