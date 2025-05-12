@@ -14,6 +14,8 @@ import ytBg from "../../assets/img/yt-bg.jpeg";
 import { FaCirclePlay } from "react-icons/fa6";
 import trainerSVg from "../../assets/svg/trainer svg.svg";
 import TrainerCards from "../../components/TrainerCards/TrainerCards";
+import blogSvg from "../../assets/svg/blog svg.svg";
+import ArticleCards from "../../components/ArticleCards/ArticleCards";
 gsap.registerPlugin(ScrollTrigger);
 const Home = ({ isActive }: HomeProps) => {
   const imageRef = useRef(null);
@@ -38,21 +40,22 @@ const Home = ({ isActive }: HomeProps) => {
       );
     }
   }, [isActive]);
+
   return (
     <div className="home">
       <section className="home-hero-container">
         <div ref={imageRef} className="background">
           <div className="black"></div>
         </div>
-        <div className="home-hero">
+        <div data-aos="zoom-in" className="home-hero">
           <h1>THE GYM FOR HIGH IMPACT ATHLETES</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus
             vehicula ut neque leo, posuere purus arcu.
           </p>
           <div className="buttons">
-            <Button name={"SUBSCRIBE NOW"} style={"white"} />
-            <Button name={"BROWSE CLASSES"} style={"transparent"} />
+            <Button name={"SUBSCRIBE NOW"} style={"white"} to="/subscribe" />
+            <Button name={"BROWSE CLASSES"} style={"transparent"} to="/class" />
           </div>
         </div>
       </section>
@@ -98,7 +101,7 @@ const Home = ({ isActive }: HomeProps) => {
           </div>
         </div>
       </section>
-      <section className="home-about">
+      <section data-aos="fade-up" className="home-about">
         <img src={aboutUs} alt="about us" />
 
         <h1>WE ARE NOT JUST A GYM, WE ARE A WHOLE COMMUNITY</h1>
@@ -108,11 +111,19 @@ const Home = ({ isActive }: HomeProps) => {
           Velit senectus.
         </p>
         <div className="buttons">
-          <Button name={"SUBSCRIBE NOW"} style={"black-button"} />
-          <Button name={"BROWSE CLASSES"} style={"white-transparent"} />
+          <Button
+            name={"SUBSCRIBE NOW"}
+            style={"black-button"}
+            to="/subscribe"
+          />
+          <Button
+            name={"BROWSE CLASSES"}
+            style={"white-transparent"}
+            to="/class"
+          />
         </div>
       </section>
-      <section className="classes-img">
+      <section data-aos="fade-up" className="classes-img">
         <div className="white-bg"></div>
         <div className="black-bg"></div>
         <div className="images">
@@ -121,7 +132,7 @@ const Home = ({ isActive }: HomeProps) => {
         </div>
       </section>
       <section className="home-classes">
-        <div className="classes-title">
+        <div data-aos="fade-up" className="classes-title">
           <img className="classes-svg" src={classesSvg} alt="" />
           <h2>DISCOVER ALL OUR CLASSES</h2>
 
@@ -132,29 +143,36 @@ const Home = ({ isActive }: HomeProps) => {
         </div>
         <div className="carousel-container">
           <div>Carousel</div>
-          <Button name={"BROWSE ALL CLASSES"} style={"white"} />
+          <Button name={"BROWSE ALL CLASSES"} style={"white"} to="/class" />
         </div>
       </section>
       <section className="yt">
         <img src={ytBg} alt="" />
         <div className="yt-info black">
-          <div className="yt-title">
+          <div data-aos="fade-up" className="yt-title">
             <h2>DISCOVER WHAT MAKES OUR GYM DIFFERENT</h2>
-            <Button name="SUBSCRIBE NOW" style="white" />
+            <Button name="SUBSCRIBE NOW" style="white" to="/subscribe" />
           </div>
-          <div>
-            <FaCirclePlay />
-          </div>
+
+          <FaCirclePlay data-aos="fade-up" />
         </div>
       </section>
       <section className="home-team">
-        <div className="team-title">
+        <div data-aos="fade-up" className="team-title">
           <img className="trainer-svg" src={trainerSVg} alt="trainers" />
           <h2>
             OUR TEAM OF <br /> PERSONAL TRAINERS
           </h2>
         </div>
-        <TrainerCards />
+        <TrainerCards data-aos="fade-up" />
+        <Button name="BROWSE TRAINERS" style="black-button" to="/trainers" />
+      </section>
+      <section className="home-blog">
+        <div data-aos="fade-up" className="blog-title">
+          <img src={blogSvg} alt="" />
+          <h2>ARTICLES & NEWS</h2>
+        </div>
+        <ArticleCards data-aos="fade-up" />
       </section>
     </div>
   );

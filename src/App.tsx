@@ -6,6 +6,9 @@ import { useEffect, useState } from "react";
 import About from "./pages/About/About";
 import Classes from "./pages/Classes/Classes";
 import Shop from "./pages/Shop/Shop";
+import ClassDetails from "./components/ClassDetails/ClassDetails";
+import ProductDetails from "./components/ProductDetails/ProductDetails";
+import Trainers from "./components/Trainers/Trainers";
 
 function App() {
   const [isScrollActive, setIsScrollActive] = useState(false);
@@ -19,9 +22,24 @@ function App() {
         <Routes>
           <Route element={<Layout />}>
             <Route path={"/"} element={<Home isActive={isScrollActive} />} />
-            <Route path={"/about"} element={<About />} />
-            <Route path={"/class"} element={<Classes />} />
-            <Route path={"/shop"} element={<Shop />} />
+            <Route
+              path={"/about"}
+              element={<About isActive={isScrollActive} />}
+            />
+            <Route
+              path={"/class"}
+              element={<Classes isActive={isScrollActive} />}
+            />
+            <Route
+              path={"/shop"}
+              element={<Shop isActive={isScrollActive} />}
+            />
+            <Route
+              path={"/trainers"}
+              element={<Trainers isActive={isScrollActive} />}
+            />
+            <Route path={"/class/:slug"} element={<ClassDetails />} />
+            <Route path={"/product/:slug"} element={<ProductDetails />} />
           </Route>
         </Routes>
       </Router>

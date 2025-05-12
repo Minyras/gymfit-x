@@ -1,13 +1,12 @@
-import React from "react";
 import "./trainerCard.css";
 import type Trainers from "../../models/TrainerCardProps";
-import trainer1 from "../../assets/img/trainer1.jpeg";
+
 import { MoveRight, Plus } from "lucide-react";
-const TrainerCard = ({ name }: Trainers) => {
+const TrainerCard = ({ image, name }: Trainers) => {
   return (
     <div className="trainer-card">
       <div className="trainerImg">
-        <img className="trainer-img" src={trainer1} alt="" />
+        <img className="trainer-img" src={image} alt="" />
         <button>
           <Plus className="plus-icon" />
           <MoveRight className="moveright-icon" />

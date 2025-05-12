@@ -1,0 +1,46 @@
+.class-cards {
+  padding: 100px 150px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px 60px;
+}
+
+.class-card img {
+  width: 100%;
+  transition: 0.3s ease-in-out;
+}
+.class-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+.class-info {
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: 0.2s ease-in-out;
+}
+.class-info a {
+  transition: 0.2s ease-in-out;
+  font-weight: bold;
+  color: black;
+}
+.class-card h3 {
+  font-size: 28px;
+}
+.class-card p {
+  font-size: 18px;
+  line-height: 34px;
+}
+.class-card:hover .class-info,
+.class-card:hover .class-info a {
+  color: #ff3737;
+}
+.class-card:hover img {
+  transform: scale(1.02);
+  filter: brightness(0.7);
+}

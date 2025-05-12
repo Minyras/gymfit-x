@@ -1,0 +1,143 @@
+.class-details {
+  position: relative;
+  padding: 200px 150px;
+}
+
+.class-details-card {
+  position: absolute;
+  right: 150px;
+  top: 150px;
+  width: 400px;
+  background-color: white;
+  padding: 30px;
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 99;
+}
+.class-details-card .instructor img {
+  border-radius: 100%;
+  overflow-y: hidden;
+  width: 100px;
+  transition: 0.3s ease-in-out;
+}
+.class-details-card .instructor {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  overflow-y: hidden;
+}
+.class-details-card button {
+  align-self: center;
+}
+
+.class-details-title h1 {
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+.class-details-card .detail {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+.class-details-card .detail span:nth-of-type(1) {
+  font-weight: bolder;
+}
+
+.class-details-card .instructor-title span {
+  font-size: 22px;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+.class-details-card .instructor-title h4 {
+  margin-bottom: 10px;
+  font-weight: lighter;
+}
+.class-details-card .instructor:hover span {
+  color: #ff3737;
+}
+.class-details-card .instructor:hover img {
+  transform: scale(1.1);
+}
+
+.class-details .class-details-yt img {
+  position: relative;
+  width: 100%;
+}
+.class-details .class-details-yt {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 50px 0;
+}
+.class-details .class-details-yt .img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.class-details .class-details-yt svg {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  fill: white;
+  z-index: 2;
+  transition: 0.3s ease-in-out;
+}
+.img-container .black {
+  background-color: rgba(0, 0, 0, 0.514);
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 394px;
+}
+.class-left {
+  width: 60%;
+}
+
+.class-details .class-details-yt svg:hover {
+  fill: #ff3737;
+}
+
+.class-details-about h3,
+.class-details-schedule h3 {
+  font-size: 50px;
+  font-weight: bolder;
+  margin: 20px 0;
+}
+.class-details-about p,
+.class-details-schedule p {
+  font-size: 20px;
+  line-height: 34px;
+  color: gray;
+  margin: 20px 0;
+}
+
+.schedule-day h4 {
+  font-size: 24px;
+  margin: 20px 0;
+}
+.schedule-day ul li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.more-classes {
+  padding-top: 70px;
+}
+.more-classes .class-cards {
+  padding: 0;
+}
+.more-classes-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+.more-classes-title h2 {
+  font-size: 50px;
+}

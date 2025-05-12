@@ -1,17 +1,30 @@
-import Header from "./Header/Header";
 import { Outlet } from "react-router-dom";
-import Footer from "./Footer/Footer";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import ScroolTop from "../utils/ScroolTop";
 
-const Layout = () => {
+const UserLayout = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
   return (
     <div>
+      <ScroolTop />
       <Header />
-      <div>
+
+      <main>
         <Outlet />
-      </div>
+      </main>
+
       <Footer />
     </div>
   );
 };
 
-export default Layout;
+export default UserLayout;

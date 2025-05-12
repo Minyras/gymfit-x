@@ -1,0 +1,149 @@
+{
+  "classes": [
+    {
+      "id": 1,
+      "title": "High-Intensity Training",
+      "slug": "high-intensity-training",
+      "image": "/classes1.jpeg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing amet, aliquet orci tellus. Massa sit risus gravida doloril.",
+      "longDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio amet egestas dignissim eu nunc. Id pulvinar enim volutpat tellus. Cras tellus ac dui at sed.",
+      "duration": "60 minutes",
+      "intensity": "High",
+      "level": "Advanced",
+      "schedule": ["Monday", "Friday"],
+      "fullSchedule": {
+        "Monday": ["8:00 AM - 9:00 AM", "10:00 AM - 11:00 AM"],
+        "Friday": ["2:00 PM - 3:00 PM"]
+      },
+      "instructor": {
+        "name": "John Carter",
+        "avatar": "/instructor1.jpeg"
+      },
+      "videoUrl": "https://www.youtube.com/embed/sample"
+    },
+    {
+      "id": 2,
+      "title": "Weight Lifting",
+      "slug": "weight-lifting",
+      "image": "/classes2.jpeg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing amet, aliquet orci tellus. Massa sit risus gravida doloril.",
+      "longDescription": "Weight lifting class focused on technique and strength improvement for all levels.",
+      "duration": "45 minutes",
+      "intensity": "Medium",
+      "level": "Intermediate",
+      "schedule": ["Tuesday", "Thursday"],
+      "fullSchedule": {
+        "Tuesday": ["7:00 PM - 8:00 PM"],
+        "Thursday": ["6:00 PM - 7:00 PM"]
+      },
+      "instructor": {
+        "name": "Sarah Johnson",
+        "avatar": "/images/instructor-sarah.jpg"
+      },
+      "videoUrl": ""
+    },
+    {
+      "id": 3,
+      "title": "Crossfit",
+      "slug": "crossfit",
+      "image": "/classes3.jpeg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing amet, aliquet orci tellus. Massa sit risus gravida doloril.",
+      "longDescription": "Crossfit is designed to improve strength, agility, and overall performance through constantly varied workouts. Ideal for those looking to challenge themselves daily.",
+      "duration": "50 minutes",
+      "intensity": "High",
+      "level": "All Levels",
+      "schedule": ["Monday", "Wednesday"],
+      "fullSchedule": {
+        "Monday": ["9:00 AM - 10:00 AM", "3:00 PM - 4:00 PM"],
+        "Wednesday": ["6:00 PM - 7:00 PM"]
+      },
+      "instructor": {
+        "name": "Alex Morgan",
+        "avatar": "/instructor1.jpeg"
+      },
+      "videoUrl": "https://www.youtube.com/embed/sample-crossfit"
+    },
+    {
+      "id": 4,
+      "title": "Cardio",
+      "slug": "cardio",
+      "image": "/classes4.jpeg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing amet, aliquet orci tellus. Massa sit risus gravida doloril.",
+      "longDescription": "This class blends endurance training with fun movement to get your body pumping. Cardio improves cardiovascular health, stamina, and energy.",
+      "duration": "40 minutes",
+      "intensity": "Medium",
+      "level": "Beginner",
+      "schedule": ["Tuesday", "Saturday"],
+      "fullSchedule": {
+        "Tuesday": ["6:00 AM - 7:00 AM"],
+        "Saturday": ["9:00 AM - 10:00 AM", "1:00 PM - 2:00 PM"]
+      },
+      "instructor": {
+        "name": "Emma Lee",
+        "avatar": "/images/instructor-emma.jpg"
+      },
+      "videoUrl": "https://www.youtube.com/embed/sample-cardio"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "slug": "15lb-weights",
+      "name": "15LB Weights",
+      "price": 79.0,
+      "oldPrice": 159.0,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "image": "/15lbweights.jpeg",
+      "gallery": [
+        "/images/weights-15lb-1.jpg",
+        "/images/weights-15lb-2.jpg",
+        "/images/weights-15lb-3.jpg"
+      ],
+      "sizes": ["S", "M", "L"],
+      "details": {
+        "about": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.",
+        "quality": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam."
+      }
+    },
+    {
+      "id": 2,
+      "slug": "25lb-weights",
+      "name": "25LB Weights",
+      "price": 99.0,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "image": "/25lbweights.jpeg"
+    },
+    {
+      "id": 3,
+      "slug": "hand-grips",
+      "name": "Hand Grips",
+      "price": 39.0,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "image": "/handgrips.jpeg"
+    },
+    {
+      "id": 4,
+      "slug": "gymfit-shaker",
+      "name": "GymFit X Shaker",
+      "price": 19.0,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "image": "/shaker.jpeg"
+    },
+    {
+      "id": 5,
+      "slug": "skip-rope",
+      "name": "Skip Rope",
+      "price": 19.0,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "image": "/skiprope.jpeg"
+    },
+    {
+      "id": 6,
+      "slug": "box-gloves",
+      "name": "Box Gloves",
+      "price": 299.0,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "image": "/boxgloves.jpeg"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
 export default interface Trainers {
-  // image: string;
+  image: string;
   name: string;
 }

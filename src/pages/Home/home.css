@@ -234,6 +234,12 @@
 }
 
 .home-team {
+  display: flex;
+  flex-direction: column;
+  padding: 150px 0;
+}
+.home-team button {
+  align-self: center;
 }
 .trainer-svg {
   position: absolute;
@@ -245,11 +251,29 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 150px;
   position: relative;
 }
 .team-title h2 {
   font-size: 60px;
   width: 70%;
   z-index: 999;
+}
+.home-blog {
+  background-color: #141414;
+  color: white;
+  padding: 200px 150px 100px;
+}
+.blog-title {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.blog-title img {
+  position: absolute;
+  bottom: 30px;
+  left: -60px;
+}
+.blog-title h2 {
+  font-size: 60px;
+  z-index: 99;
 }

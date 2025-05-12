@@ -1,0 +1,15 @@
+.values-card {
+  border: 1px solid gray;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.values-card h3 {
+  font-size: 28px;
+}
+.values-card p {
+  color: lightgray;
+  font-size: 18px;
+  line-height: 34px;
+}
