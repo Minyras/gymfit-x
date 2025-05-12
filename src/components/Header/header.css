@@ -39,6 +39,7 @@
 }
 .shoppingBag {
   position: relative;
+  cursor: pointer;
 }
 
 .header .active {

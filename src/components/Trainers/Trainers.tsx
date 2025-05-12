@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useEffect, useRef } from "react";
 import type PageProps from "../../models/PageProps";
-
+import TrainerCards from "../TrainerCards/TrainerCards";
 gsap.registerPlugin(ScrollTrigger);
 
 const Trainers = ({ isActive }: PageProps) => {
@@ -29,20 +29,22 @@ const Trainers = ({ isActive }: PageProps) => {
       );
     }
   }, [isActive]);
+
   return (
-    <div className="trainers">
+    <div className="trainers-container">
       <section className="trainers-hero-container">
         <div ref={imageRef} className="background">
           <div className="black"></div>
         </div>
         <section className="trainers-hero">
-          <h1 data-aos="zoom-in">SHOP</h1>
+          <h1 data-aos="zoom-in">TRAINERS</h1>
           <p data-aos="fade-up">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus
             vehicula ut neque leo, posuere purus arcu.
           </p>
         </section>
       </section>
+      <TrainerCards />
     </div>
   );
 };

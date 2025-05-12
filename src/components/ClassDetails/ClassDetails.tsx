@@ -41,7 +41,7 @@ const ClassDetails = () => {
 
   return (
     <div className="class-details">
-      <div className="class-details-card">
+      <div data-aos="fade-left" className="class-details-card">
         <h3>CLASS DETAILS</h3>
         <p>{cls.description}</p>
         <div className="detail">
@@ -75,11 +75,11 @@ const ClassDetails = () => {
         <Button name="BOOK A CLASS" style="black-button" />
       </div>
       <div className="class-left">
-        <div className="class-details-title">
+        <div data-aos="zoom-in" className="class-details-title">
           <h1>{cls.title}</h1>
           <p>{cls.longDescription}</p>
         </div>
-        <div className="class-details-yt">
+        <div data-aos="fade-up" className="class-details-yt">
           <div className="img-container">
             <div className="black"></div>
             <img src={cls.image} alt="" />
@@ -87,7 +87,7 @@ const ClassDetails = () => {
           </div>
         </div>
 
-        <div className="class-details-about">
+        <div data-aos="fade-up" className="class-details-about">
           <h3>ABOUT THE CLASS</h3>
           <p>{cls.longDescription}</p>
           <p>
@@ -98,12 +98,12 @@ const ClassDetails = () => {
           </p>
         </div>
         <hr />
-        <div className="class-details-schedule">
+        <div data-aos="fade-up" className="class-details-schedule">
           <h3>CLASS SCHEDULE</h3>
           <p>{cls.longDescription}</p>
 
           {Object.entries(cls.fullSchedule).map(([day, times]) => (
-            <div key={day} className="schedule-day">
+            <div data-aos="fade-up" key={day} className="schedule-day">
               <h4>{day}</h4>
               <ul>
                 {times.map((time, i) => (
@@ -115,13 +115,13 @@ const ClassDetails = () => {
         </div>
       </div>
       <div className="more-classes">
-        <div className="more-classes-title">
+        <div data-aos="fade-up" className="more-classes-title">
           <h2>More Classes</h2>
           <div>
             <Button name="BROWSE CLASSES" style="black-button" to={"/class"} />
           </div>
         </div>
-        <div className="class-cards">
+        <div data-aos="fade-up" className="class-cards">
           {items
             .filter((c) => c.slug !== slug)
             .map((c) => (

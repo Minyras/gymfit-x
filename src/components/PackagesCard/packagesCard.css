@@ -1,0 +1,39 @@
+.packages-card {
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border: 1px solid gray;
+  transition: 0.3s ease-in-out;
+}
+
+.packages-card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.packages-card p {
+  font-size: 20px;
+}
+.packages-card ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+}
+.black-package {
+  background-color: #141414;
+  color: white;
+}
+
+.package-price {
+  font-size: 26px;
+  font-weight: bold;
+}
+.packages-card button {
+  margin-top: 10px;
+}
+
+.packages-card:hover {
+  transform: scale(1.05);
+}

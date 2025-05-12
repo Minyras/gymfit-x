@@ -16,6 +16,7 @@
   justify-content: space-between;
   align-items: flex-start;
   gap: 10px;
+  cursor: pointer;
 }
 .class-info {
   color: black;
@@ -36,6 +37,7 @@
   font-size: 18px;
   line-height: 34px;
 }
+
 .class-card:hover .class-info,
 .class-card:hover .class-info a {
   color: #ff3737;

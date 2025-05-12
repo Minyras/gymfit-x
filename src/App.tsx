@@ -9,6 +9,7 @@ import Shop from "./pages/Shop/Shop";
 import ClassDetails from "./components/ClassDetails/ClassDetails";
 import ProductDetails from "./components/ProductDetails/ProductDetails";
 import Trainers from "./components/Trainers/Trainers";
+import Subscribe from "./components/Subscribe/Subscribe";
 
 function App() {
   const [isScrollActive, setIsScrollActive] = useState(false);
@@ -38,6 +39,7 @@ function App() {
               path={"/trainers"}
               element={<Trainers isActive={isScrollActive} />}
             />
+            <Route path={"/subscribe"} element={<Subscribe />} />
             <Route path={"/class/:slug"} element={<ClassDetails />} />
             <Route path={"/product/:slug"} element={<ProductDetails />} />
           </Route>

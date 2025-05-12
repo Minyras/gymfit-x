@@ -147,10 +147,6 @@
   overflow: hidden;
 }
 
-.facilities-yt a:hover ~ .img-wrapper img {
-  transform: scale(1.1);
-  filter: brightness(0.7);
-}
 .facilities-yt a svg:hover {
   fill: #ff3737;
 }

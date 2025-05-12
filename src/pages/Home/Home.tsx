@@ -2,8 +2,8 @@ import { useEffect, useRef } from "react";
 import "./home.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import type HomeProps from "../../models/HomeProps";
-import { ChevronLeft, ChevronRight, Clock3, Mail, MapPin } from "lucide-react";
+import type PageProps from "../../models/PageProps";
+import { Clock3, Mail, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import Button from "../../components/Button/Button";
 import aboutUs from "../../assets/svg/about us.svg";
@@ -17,7 +17,7 @@ import TrainerCards from "../../components/TrainerCards/TrainerCards";
 import blogSvg from "../../assets/svg/blog svg.svg";
 import ArticleCards from "../../components/ArticleCards/ArticleCards";
 gsap.registerPlugin(ScrollTrigger);
-const Home = ({ isActive }: HomeProps) => {
+const Home = ({ isActive }: PageProps) => {
   const imageRef = useRef(null);
 
   useEffect(() => {
@@ -135,14 +135,8 @@ const Home = ({ isActive }: HomeProps) => {
         <div data-aos="fade-up" className="classes-title">
           <img className="classes-svg" src={classesSvg} alt="" />
           <h2>DISCOVER ALL OUR CLASSES</h2>
-
-          <div className="arrows">
-            <ChevronLeft />
-            <ChevronRight />
-          </div>
         </div>
         <div className="carousel-container">
-          <div>Carousel</div>
           <Button name={"BROWSE ALL CLASSES"} style={"white"} to="/class" />
         </div>
       </section>
@@ -164,7 +158,7 @@ const Home = ({ isActive }: HomeProps) => {
             OUR TEAM OF <br /> PERSONAL TRAINERS
           </h2>
         </div>
-        <TrainerCards data-aos="fade-up" />
+        <TrainerCards data-aos="fade-up" isActive={true} />
         <Button name="BROWSE TRAINERS" style="black-button" to="/trainers" />
       </section>
       <section className="home-blog">

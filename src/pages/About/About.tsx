@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-import type PageProps from "../../models/PageProps";
 import "./about.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
@@ -11,6 +10,7 @@ import { FaCirclePlay } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import AboutValues from "../../components/AboutValues/AboutValues";
 import valuesSvg from "../../assets/svg/values svg.svg";
+import type PageProps from "../../models/PageProps";
 gsap.registerPlugin(ScrollTrigger);
 const About = ({ isActive }: PageProps) => {
   const imageRef = useRef(null);
@@ -54,18 +54,18 @@ const About = ({ isActive }: PageProps) => {
       <section className="about-story">
         <div className="story-content">
           <img className="storySvg" src={storySvg} alt="" />
-          <h2>THE STORY BEHIND OUR GYM</h2>
-          <p>
+          <h2 data-aos="fade-up">THE STORY BEHIND OUR GYM</h2>
+          <p data-aos="fade-up">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo
             sociis morbi sed sagittis consectetur in quisque placerat enim.
             Vitae, lacus eros egestas suspendisse natoque consequat. Tellus enim
             eros diam sit leo blandit libero ut morbi. Convallis iaculis nam.
           </p>
         </div>
-        <img src={storyImg} alt="" />
+        <img data-aos="fade-up" src={storyImg} alt="" />
       </section>
       <section className="facilities">
-        <div className="facilities-title">
+        <div data-aos="fade-up" className="facilities-title">
           <img src={facilitiesSvg} alt="" />
           <h2>OUR FACILITIES</h2>
           <p>
@@ -90,7 +90,7 @@ const About = ({ isActive }: PageProps) => {
         </div>
       </section>
       <section className="about-values">
-        <div className="values-title">
+        <div data-aos="fade-up" className="values-title">
           <img src={valuesSvg} alt="" />
           <h2>THE CORE VALUES WE BELIEVE IN</h2>
         </div>

@@ -37,9 +37,14 @@ const ProductDetails = () => {
     <div className="product-details">
       <div className="product-details-card">
         <div className="product-images">
-          <img className="main-product-image" src={prd.image} alt="" />
+          <img
+            data-aos="fade-right"
+            className="main-product-image"
+            src={prd.image}
+            alt=""
+          />
         </div>
-        <div className="product-info">
+        <div data-aos="fade-left" className="product-info">
           <h3>{prd.name}</h3>
           <div className="product-prices">
             {prd.oldPrice ? (
@@ -86,8 +91,8 @@ const ProductDetails = () => {
       </div>
       <div className="more-products">
         <div className="more-product-title">
-          <h2>More Products</h2>
-          <div>
+          <h2 data-aos="fade-up">More Products</h2>
+          <div data-aos="fade-up">
             <Button
               name="BROWSE PRODUCTS"
               style="black-button"
@@ -95,7 +100,7 @@ const ProductDetails = () => {
             />
           </div>
         </div>
-        <div className="product-cards">
+        <div data-aos="fade-up" className="product-cards">
           {items
             .filter((prd) => prd.slug !== slug)
             .map((prd) => (

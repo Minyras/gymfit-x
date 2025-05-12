@@ -5,9 +5,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 40px;
 }
 
-.trainers .background {
+.trainers-container .background {
   background-image: url("../../assets/img/trainers img.jpeg");
   background-repeat: no-repeat;
   background-position: center;
@@ -19,7 +20,7 @@
   will-change: transform;
 }
 
-.trainers .black {
+.trainers-container .black {
   position: absolute;
   top: 0;
   left: 0;
