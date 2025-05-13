@@ -1,0 +1,23 @@
+.faq-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.faq-title h3 {
+  font-size: 22px;
+  font-weight: 400;
+}
+.faq-info {
+  margin-top: 20px;
+  text-align: left;
+  color: lightgray;
+  line-height: 34px;
+  font-size: 20px;
+}
+.faqs {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.faqs:hover {
+  color: gray;
+}

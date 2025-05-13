@@ -1,6 +1,6 @@
 import "./classDetails.css";
 import { useEffect } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import {
   fetchClasses,
@@ -83,6 +83,7 @@ const ClassDetails = () => {
           <div className="img-container">
             <div className="black"></div>
             <img src={cls.image} alt="" />
+
             <FaCirclePlay />
           </div>
         </div>

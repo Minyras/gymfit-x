@@ -37,8 +37,8 @@
         "Thursday": ["6:00 PM - 7:00 PM"]
       },
       "instructor": {
-        "name": "Sarah Johnson",
-        "avatar": "/images/instructor-sarah.jpg"
+        "name": "Aaron White",
+        "avatar": "/instructor2.jpeg"
       },
       "videoUrl": ""
     },
@@ -58,8 +58,8 @@
         "Wednesday": ["6:00 PM - 7:00 PM"]
       },
       "instructor": {
-        "name": "Alex Morgan",
-        "avatar": "/instructor1.jpeg"
+        "name": "Sophie Moore",
+        "avatar": "/instructor4.jpeg"
       },
       "videoUrl": "https://www.youtube.com/embed/sample-crossfit"
     },
@@ -79,8 +79,8 @@
         "Saturday": ["9:00 AM - 10:00 AM", "1:00 PM - 2:00 PM"]
       },
       "instructor": {
-        "name": "Emma Lee",
-        "avatar": "/images/instructor-emma.jpg"
+        "name": "Dan Clark",
+        "avatar": "/instructor3.jpeg"
       },
       "videoUrl": "https://www.youtube.com/embed/sample-cardio"
     }

@@ -43,6 +43,12 @@ const Header = () => {
           >
             Shop
           </NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? "active" : "")}
+            to="/contact"
+          >
+            Contact Us
+          </NavLink>
         </ul>
       </nav>
       <div onClick={() => dispatch(toggleCart())} className="shoppingBag">

@@ -147,8 +147,12 @@ const Home = ({ isActive }: PageProps) => {
             <h2>DISCOVER WHAT MAKES OUR GYM DIFFERENT</h2>
             <Button name="SUBSCRIBE NOW" style="white" to="/subscribe" />
           </div>
-
-          <FaCirclePlay data-aos="fade-up" />
+          <Link
+            data-aos="fade-up"
+            to={"https://www.youtube.com/watch?v=tUykoP30Gb0"}
+          >
+            <FaCirclePlay />
+          </Link>
         </div>
       </section>
       <section className="home-team">
