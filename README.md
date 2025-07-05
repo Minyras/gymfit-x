@@ -75,5 +75,5 @@ npx json-server --watch db.json --port 5000
 
 Built with by [Minurə Seyidova](https://github.com/Minyras)  
 💼 Junior JavaScript (React) Software Engineer  
-📧 minureseyidova@gmail.com  
+📧 minure.seyidova@gmail.com  
 🔗 [LinkedIn](https://www.linkedin.com/in/minura-seyidova/) | [GitHub](https://github.com/Minyras)
