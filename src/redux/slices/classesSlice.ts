@@ -36,7 +36,7 @@ const initialState: ClassesState = {
 };
 
 export const fetchClasses = createAsyncThunk("classes/fetch", async () => {
-  const res = await fetch("http://localhost:4000/classes");
+  const res = await fetch("https://gymfit-x.onrender.com/classes");
   if (!res.ok) {
     throw new Error("Failed to fetch classes");
   }
