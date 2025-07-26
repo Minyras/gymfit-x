@@ -1,54 +1,79 @@
-# React + TypeScript + Vite
+# GymFit-X 🏋️‍♂️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern fitness web application built with **React**, **TypeScript**, **Redux**, and **Vite**. GymFit-X offers users an engaging experience to explore gym classes, trainers, shop fitness products, and manage their cart — all in a responsive and user-friendly interface.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🏠 **Home Page** – Dynamic hero sections with call-to-actions and featured content.
+- 📖 **About Us** – Learn more about GymFit-X and its core values.
+- 🏋️‍♀️ **Classes** – Browse gym classes with detailed information.
+- 🛒 **Shop** – Purchase fitness equipment and accessories online.
+- 👩‍🏫 **Trainers** – Meet the team of professional trainers.
+- 📞 **Contact Us** – Simple and clean contact page with a form.
+- ❓ **FAQ** – Frequently asked questions for user support.
+- 🛍️ **Cart** – Add, remove, and manage products with Redux state management.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🛠️ Tech Stack
+
+- **Frontend:** React + TypeScript
+- **State Management:** Redux Toolkit
+- **Styling:** CSS Modules
+- **Build Tool:** Vite
+- **Assets:** JPEG & SVG images for a rich UI
+- **Backend (Mock API):** JSON Server (`db.json`)
+
+---
+
+## 📁 Project Structure
+
+```
+gymfit-x/
+├── public/ # Static assets (images, SVGs)
+├── src/
+│ ├── assets/ # Images and SVGs
+│ ├── components/ # Reusable UI components
+│ ├── pages/ # Page-level components
+│ ├── redux/ # Redux slices and store
+│ ├── utils/ # Utility functions/components
+│ ├── App.tsx # App entry component
+│ └── main.tsx # Application bootstrap
+├── db.json # Mock API data
+├── index.html # HTML entry point
+├── vite.config.ts # Vite configuration
+├── tsconfig.json # TypeScript configuration
+└── package.json # Project metadata and dependencies
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📦 Installation
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/<your-username>/gymfit-x.git
+   cd gymfit-x
+2. Install dependencies
 ```
+npm install
+
+```
+3.Start the development server
+```
+npm run dev
+```
+4.Run JSON Server (for mock API)
+```
+npx json-server --watch db.json --port 5000
+```
+5.Open in browser: http://localhost:5173
+
+## 👩‍💻 Created By
+
+Built with by [Minurə Seyidova](https://github.com/Minyras)  
+💼 Junior JavaScript (React) Software Engineer  
+📧 minure.seyidova@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/minura-seyidova/) | [GitHub](https://github.com/Minyras)
