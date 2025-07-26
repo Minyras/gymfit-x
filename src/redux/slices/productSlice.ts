@@ -29,7 +29,7 @@ const initialState: ProductsState = {
 };
 
 export const fetchProducts = createAsyncThunk("products/fetch", async () => {
-  const res = await fetch("http://localhost:4000/products");
+  const res = await fetch("https://gymfit-x.onrender.com/products");
   if (!res.ok) {
     throw new Error("Failed to fetch products");
   }
